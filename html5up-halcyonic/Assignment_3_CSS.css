@@ -1,0 +1,285 @@
+body {
+  background-color: #f5f5f5;
+  color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#header {
+  background-color: #ffffff;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  height: 60px;
+}
+
+#logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.logo-text {
+  color: #d62828;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-left a {
+  margin-right: 1rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-left a:hover {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.category-box {
+  background-color: #f2efef;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-weight: 500;
+  color: #111;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s;
+}
+
+.category-box img.category-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  filter: none;
+}
+
+#footer {
+  background-color: #f2efef;
+  color: #111;
+  padding: 2rem 0;
+}
+
+#footer h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.quick-links a {
+  color: #111;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+#footer img {
+  vertical-align: middle;
+}
+
+#reviews {
+  background-color: #f8f8f8;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.review-box {
+  background-color: #f2efef;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: unset;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  word-break: break-word;
+  height: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+
+.review-box p {
+  margin: 0.6rem 0 0 0;
+  line-height: 1.4;
+}
+
+#reviews .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+
+#reviews h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.footer-contact-map {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer-contact-info {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.footer-contact-info p {
+  margin: 0 0 0.8rem 0;
+  line-height: 1.4;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.footer-contact-info .icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+}
+
+.footer-map img {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+
+#review-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.review-box {
+  background-color: #f2efef;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  max-width: 400px;
+  line-height: 1.5;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#review-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#review-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #d62828;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#review-buttons button:hover {
+  background-color: #b81f1f;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 1.2rem;
+  background-color: #d62828;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#backToTopBtn:hover {
+  background-color: #b81f1f;
+}
+
+/* Theme Toggle Button */
+#themeToggleBtn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 1.2rem;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 736px) {
+  #logo img {
+    display: none;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+    color: #d62828;
+  }
+
+  #titleBar .title {
+    font-size: 1.5rem;
+    color: #d62828;
+    font-weight: bold;
+    line-height: 60px;
+  }
+}
